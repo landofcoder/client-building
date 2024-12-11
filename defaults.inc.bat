@@ -31,7 +31,7 @@ Rem Build environment
 rem Comma separated list of build targets (default: Win64, Win32)
 if "%BUILD_TARGETS%" == ""                  set BUILD_TARGETS=Win64
 
-if "%PROJECT_PATH%" == ""                   set PROJECT_PATH=c:/Nextcloud/client-building
+if "%PROJECT_PATH%" == ""                   set PROJECT_PATH=c:/Nextcloud/client-building-test
 
 if "%Png2Ico_EXECUTABLE%" == ""             set Png2Ico_EXECUTABLE=c:/Nextcloud/tools/png2ico.exe
 

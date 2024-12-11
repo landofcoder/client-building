@@ -81,7 +81,7 @@ Var NoAutomaticUpdates
 !define INSTALLER_FILENAME "${APPLICATION_SHORTNAME}-${VERSION}-${MIRALL_VERSION_SUFFIX}-${BUILD_TIME_FILENAME}-${BUILD_TYPE}.exe"
 Name "Nextcloud"
 BrandingText "${APPLICATION_NAME} ${VERSION} - ${BUILD_TIME}"
-;IS_INNER_SIGN_UNINSTALLER;OutFile "${PROJECT_PATH}\client-building\daily\${INSTALLER_FILENAME}"
+;IS_INNER_SIGN_UNINSTALLER;OutFile "${PROJECT_PATH}\client-building-test\daily\${INSTALLER_FILENAME}"
 InstallDir "$PROGRAMFILES64\Nextcloud"    ; use the correct path for Win64 (on Win32 this is identical to $PROGRAMFILES)
 InstallDirRegKey HKCU "Software\${APPLICATION_VENDOR}\${APPLICATION_NAME}" ""
 InstType Standard
