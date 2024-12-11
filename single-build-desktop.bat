@@ -114,7 +114,7 @@ if "%PULL_DESKTOP%" == "1" (
         if %ERRORLEVEL% neq 0 goto onError
 
         echo "* git checkout master at %MY_REPO%/."
-        start "git checkout master" /B /wait git clone --depth=1 --branch=%TAG% https://github.com/nextcloud/client %MY_REPO%
+        start "git checkout master" /B /wait git clone --depth=1 --branch=%TAG% https://github.com/landofcoder/nextcloud-desktop %MY_REPO%
     )
     if !ERRORLEVEL! neq 0 goto onError
 ) else (
@@ -124,7 +124,7 @@ if "%PULL_DESKTOP%" == "1" (
         if %ERRORLEVEL% neq 0 goto onError
 
         echo "* git checkout %TAG% at %MY_REPO%/."
-        start "git checkout %TAG%" /B /wait git clone --depth=1 --branch=%TAG% https://github.com/nextcloud/client %MY_REPO%
+        start "git checkout %TAG%" /B /wait git clone --depth=1 --branch=%TAG% https://github.com/landofcoder/nextcloud-desktop %MY_REPO%
         if !ERRORLEVEL! neq 0 goto onError
     )
     if %ERRORLEVEL% neq 0 goto onError
